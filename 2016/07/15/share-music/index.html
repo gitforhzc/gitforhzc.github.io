@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="music,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ONE FOR ALL" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="音乐插件hexo-tag-aplayer installation   1npm install --save hexo-tag-aplayer  usageWith post asset folders enabled, you can easily place your image, music and LRC file into asset folder, and reference the">
+<meta name="keywords" content="music">
+<meta property="og:type" content="article">
+<meta property="og:title" content="share-music">
+<meta property="og:url" content="http://gitforhzc.github.io/2016/07/15/share-music/index.html">
+<meta property="og:site_name" content="ONE FOR ALL">
+<meta property="og:description" content="音乐插件hexo-tag-aplayer installation   1npm install --save hexo-tag-aplayer  usageWith post asset folders enabled, you can easily place your image, music and LRC file into asset folder, and reference the">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-08T11:05:57.573Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="share-music">
+<meta name="twitter:description" content="音乐插件hexo-tag-aplayer installation   1npm install --save hexo-tag-aplayer  usageWith post asset folders enabled, you can easily place your image, music and LRC file into asset folder, and reference the">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://gitforhzc.github.io/2016/07/15/share-music/">
+
+
+
+
+
+  <title>share-music | ONE FOR ALL</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-80338234-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ONE FOR ALL</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">ALL FOR ONE</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gitforhzc.github.io/2016/07/15/share-music/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hzc">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ONE FOR ALL">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">share-music</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-15T17:52:41+08:00">
+                2016-07-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/music/" itemprop="url" rel="index">
+                    <span itemprop="name">music</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/07/15/share-music/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/15/share-music/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><h2 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h2><h3 id="hexo-tag-aplayer"><a href="#hexo-tag-aplayer" class="headerlink" title="hexo-tag-aplayer"></a>hexo-tag-aplayer</h3><ul>
+<li><p>installation  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>usage<br>With post asset folders enabled, you can easily place your image, music and LRC file into asset folder, and reference them like:  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;caffeine.mp3&quot; &quot;picture.jpg&quot; &quot;lrc:caffeine.txt&quot; %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx]</p>
+</blockquote>
+</li>
+</ul>
+<a id="more"></a>
+<h3 id="获取mp3外链"><a href="#获取mp3外链" class="headerlink" title="获取mp3外链"></a>获取mp3外链</h3><h4 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h4><p>方法有二：  </p>
+<ul>
+<li>网易云音乐api<br><a href="http://music.163.com/api/song/detail/?id=29497667&amp;ids=%5B29497667%5D&amp;csrf_token=" target="_blank" rel="noopener">http://music.163.com/api/song/detail/?id=29497667&amp;ids=%5B29497667%5D&amp;csrf_token=</a><br>修改两处歌曲id，复制到浏览器地址栏，获取mp3url</li>
+</ul>
+<ul>
+<li>网易云音乐通用外链地址<br><a href="http://music.163.com/song/media/outer/url?id=28456751.mp3" target="_blank" rel="noopener">http://music.163.com/song/media/outer/url?id=28456751.mp3</a><br>修改一处歌曲id，复制到aplayer标签url直接可用</li>
+</ul>
+<h4 id="虾米音乐"><a href="#虾米音乐" class="headerlink" title="虾米音乐"></a>虾米音乐</h4><p><a href="http://www.0e99.com/musicbox/music.htm" target="_blank" rel="noopener">http://www.0e99.com/musicbox/music.htm</a><br>《虾米音乐网MP3网址外链转换》能将虾米音乐网的音乐网址转换为可供外链的MP3网址。如果转换成功立即播放并可复制转换后的MP3网址。<br>操作方法：打开虾米音乐网，查找你需要的音乐。复制音乐ID或网页地址</p>
+<p align="center"><embed height="100" allownetworking="internal" width="600" allowscriptaccess="never" quality="high" invokeurls="false" src="http://dashan.gotoip1.com/gj/xiami-gqwl.swf" type="application/x-shockwave-flash" wmode="transparent" style="z-index: 0;"></p>  
+
+
+<h4 id="QQ音乐"><a href="#QQ音乐" class="headerlink" title="QQ音乐"></a>QQ音乐</h4><p><a href="http://www.qqmusic.cc/somusic" target="_blank" rel="noopener">http://www.qqmusic.cc/somusic</a><br>输入歌手或歌名搜索，获取外链</p>
+<h3 id="获取lrc歌词"><a href="#获取lrc歌词" class="headerlink" title="获取lrc歌词"></a>获取lrc歌词</h3><p>前提：下载音乐到本地</p>
+<h4 id="autolrc"><a href="#autolrc" class="headerlink" title="autolrc"></a>autolrc</h4><ul>
+<li>download<br><code>http://www.autolyric.com/zh-hant/download</code></li>
+<li><p>setting  </p>
+<ul>
+<li><p>歌词文件编码  </p>
+<blockquote>
+<p>选项-&gt;歌词下载-&gt;歌词保存文件编码：UTF-8</p>
+</blockquote>
+</li>
+<li><p>歌词保存目录</p>
+<blockquote>
+<p>选项-&gt;歌词下载-&gt;歌词保存目录-&gt;歌曲文件保存目录</p>
+</blockquote>
+</li>
+<li><p>调整歌词</p>
+<blockquote>
+<p>歌词-&gt;调整歌词-&gt;鼠标滚轮直接调整</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="zonylrcdownload"><a href="#zonylrcdownload" class="headerlink" title="zonylrcdownload"></a>zonylrcdownload</h4><ul>
+<li>download<br><code>https://link.zhihu.com/?target=http%3A//www.myzony.com/usr/uploads/2016/05/3.2.zip</code></li>
+<li><p>setting</p>
+<ul>
+<li><p>歌词文件编码</p>
+<blockquote>
+<p>设置-&gt;输出-&gt;编码格式-&gt;UTF-8</p>
+</blockquote>
+</li>
+<li><p>歌词保存目录</p>
+<blockquote>
+<p>设置-&gt;输出-&gt;输出目录-&gt;写到同目录</p>
+</blockquote>
+</li>
+<li><p>插件(避免下载错误歌词)</p>
+<blockquote>
+<p>插件-&gt;只勾选网易云音乐</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="参考致谢"><a href="#参考致谢" class="headerlink" title="参考致谢"></a>参考致谢</h3><p>[1] hexo-tag-aplayer:  <a href="https://github.com/grzhan/hexo-tag-aplayer" target="_blank" rel="noopener">https://github.com/grzhan/hexo-tag-aplayer</a></p>
+<hr>
+<h2 id="分享音乐"><a href="#分享音乐" class="headerlink" title="分享音乐"></a>分享音乐</h2><h3 id="It-Is-Well-Live"><a href="#It-Is-Well-Live" class="headerlink" title="It Is Well (Live)"></a>It Is Well (Live)</h3><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"><pre class="aplayer-lrc-content">[ti:It Is Well (Live)]
+[ar:Bethel Music/Kristene Dimarco]
+[al:You Make Me Brave (Live)]
+[ed:2]
+[00:02.395]Bethel Music/Kristene Dimarco - It Is Well (Live)
+[00:05.932][00:37.119][00:51.771][01:06.649][01:29.003][01:41.783][02:11.439][03:04.250][05:34.946][06:10.137]
+[00:13.109]Grander [00:13.833]earth [00:14.479]has [00:14.786]quaked [00:15.356]before[00:16.562]
+[00:19.936]Moved [00:20.376]by [00:21.131]the [00:21.439]sound [00:21.788]of [00:22.038]His [00:22.306]voice[00:22.952]
+[00:25.946]Seas [00:26.361]that [00:26.637]are [00:27.298]shaken [00:28.355]and [00:28.670]stirred[00:29.534]
+[00:32.029]Can [00:32.265]be [00:32.562]calmed [00:32.853]and [00:33.138]broken [00:34.062]for [00:34.403]my [00:34.783]regard[00:35.923]
+[00:38.273]And [00:38.504]through [00:38.729]it [00:39.002]all, [00:40.258]through [00:40.494]it [00:40.789]all[00:41.289]
+[00:42.093]My [00:42.573]eyes [00:43.019]are [00:43.405]on [00:43.874]You[00:44.494]
+[00:45.624]And [00:45.858]through [00:46.095]it [00:46.399]all, [00:47.433]through [00:47.754]it [00:48.124]all
+[00:48.531]It [00:49.015]is [00:49.499]well[00:50.591]
+[00:53.005]And [00:53.208]through [00:53.430]it [00:53.734]all, [00:54.940]through [00:55.203]it [00:55.544]all[00:56.180]
+[00:56.956]My [00:57.359]eyes [00:57.810]are [00:58.196]on [00:58.674]You[00:59.279]
+[01:00.060]It [01:00.294]is [01:00.696]well [01:03.779]with [01:04.310]me[01:05.310]
+[01:17.207]Far [01:17.615]be [01:17.855]it [01:18.037]from [01:18.346]me [01:18.846]to [01:19.143]not [01:19.752]believe[01:21.096]
+[01:24.667]Even [01:24.992]when [01:25.618]my [01:26.016]eyes [01:26.427]can't [01:27.089]see[01:27.959]
+[01:30.034]And [01:30.284]this [01:30.633]mountain [01:31.320]that's [01:31.914]in [01:32.279]front [01:32.886]of [01:33.235]me[01:33.975]
+[01:36.573]Will [01:36.839]be [01:37.149]thrown [01:37.529]into [01:38.490]the [01:38.901]midst [01:39.314]of [01:39.583]the [01:39.918]sea[01:40.578]
+[01:42.963]Through [01:43.198]it [01:43.564]all, [01:44.783]through [01:45.023]it [01:45.387]all[01:45.948]
+[01:46.783]My [01:47.198]eyes [01:47.668]are [01:48.099]on [01:48.593]You[01:49.184]
+[01:50.314]Through [01:50.562]it [01:50.948]all, [01:52.115]through [01:52.432]it [01:52.788]all
+[01:53.208]It [01:53.669]is [01:54.094]well[01:55.033]
+[01:57.731]Through [01:57.942]it [01:58.265]all, [01:59.611]through [01:59.876]it [02:00.192]all[02:00.707]
+[02:01.471]My [02:01.955]eyes [02:02.410]are [02:02.822]on [02:03.306]You[02:03.866]
+[02:04.692]It [02:04.942]is [02:05.366]well[02:07.155]
+[02:08.306]It [02:08.676]is [02:09.280]well
+[02:11.923]So [02:12.173]let [02:12.571]go [02:13.809]my [02:14.382]soul [02:15.673]and [02:16.217]trust [02:17.453]in [02:18.045]Him[02:18.764]
+[02:19.220]The [02:19.458]waves [02:19.686]and [02:19.993]wind [02:21.214]still [02:21.730]know [02:23.155]His [02:23.670]name
+[02:26.660]So [02:26.910]let [02:27.260]go [02:28.620]my [02:29.130]soul [02:30.495]and [02:30.995]trust [02:32.084]in [02:32.774]Him[02:33.644]
+[02:34.061]The [02:34.337]waves [02:34.644]and [02:34.925]wind [02:35.920]still [02:36.454]know [02:37.865]His [02:38.380]name[02:40.805]
+[02:41.485]So [02:41.766]let [02:42.140]go [02:43.349]my [02:43.880]soul [02:45.245]and [02:45.735]trust [02:46.844]in [02:47.495]Him[02:48.479]
+[02:48.837]The [02:49.055]waves [02:49.260]and [02:49.571]wind [02:50.735]still [02:51.250]know [02:52.584]His [02:53.130]name[02:54.821]
+[02:56.321]The [02:56.561]waves [02:56.821]and [02:57.130]wind [02:58.099]still [02:58.630]know [03:00.077]His [03:00.571]name[03:02.849]
+[03:06.490]It [03:07.551]is [03:08.360]well [03:13.892]with [03:14.902]my [03:15.876]soul[03:17.572]
+[03:21.376]It [03:22.152]is [03:23.110]well [03:28.730]with [03:29.567]my [03:30.535]soul[03:33.307]
+[03:36.082]It [03:36.937]is [03:37.848]well [03:43.452]with [03:44.332]my [03:45.285]soul[03:50.855]
+[03:50.929]It [03:51.689]is [03:52.559]well [03:54.520]it [03:55.285]is [03:56.233]well [03:58.233]with [03:59.582]my [04:00.551]soul[04:02.475]
+[04:05.188]It [04:06.464]is [04:07.378]well [04:09.772]it [04:10.040]is [04:10.426]well [04:12.965]with [04:13.821]my [04:14.715]soul[04:17.209]
+[04:20.356]It [04:21.175]is [04:22.197]well [04:27.833]with [04:28.728]my [04:29.919]soul[04:32.783]
+[04:35.207]It [04:36.004]is [04:36.864]well [04:42.559]with [04:43.364]my [04:44.468]soul
+[04:49.880]It [04:50.721]is [04:51.601]well [04:53.411]it [04:54.335]is [04:55.304]well [04:57.390]with [04:58.696]my [04:59.576]soul[05:01.652]
+[05:04.637]It [05:05.548]is [05:06.418]well [05:08.342]it [05:09.196]is [05:10.098]well [05:12.038]with [05:13.418]my [05:14.434]soul[05:16.446]
+[05:19.402]It [05:20.282]is [05:21.184]well [05:22.978]it [05:23.952]is [05:24.848]well [05:26.778]with [05:28.257]my [05:29.243]soul[05:32.611]
+[05:41.046]Through [05:41.371]it [05:41.741]all, [05:42.931]through [05:43.264]it [05:43.611]all[05:44.124]
+[05:44.741]My [05:45.339]eyes [05:45.824]are [05:46.290]on [05:46.725]You[05:47.280]
+[05:48.431]Through [05:48.704]it [05:49.077]all, [05:50.324]through [05:50.589]it [05:50.957]all
+[05:51.386]It [05:51.858]is [05:52.313]well[05:53.857]
+[05:55.842]Through [05:56.092]it [05:56.441]all, [05:57.751]through [05:58.007]it [05:58.342]all[05:58.795]
+[05:59.741]My [06:00.165]eyes [06:00.631]are [06:01.055]on [06:01.472]You[06:02.076]
+[06:02.738]It [06:03.017]is [06:03.419]well [06:06.587]with [06:07.102]me[06:08.238]
+
+[6:20]-- AutoLyric (http://www.autolyric.com) --</pre></div><script>var aplayer0 = new APlayer({element: document.getElementById("aplayer0"),narrow: false,autoplay: false,showlrc: 2,music : {title: "It Is Well (Live)",author: "Bethel Music,Kristene Dimarco",url: "http://music.163.com/song/media/outer/url?id=28456751.mp3",pic: ""}});aplayer0.init();</script>
+<hr>
+<h3 id="大塚愛-クムリウタ-Live"><a href="#大塚愛-クムリウタ-Live" class="headerlink" title="大塚愛 - クムリウタ(Live)"></a>大塚愛 - クムリウタ(Live)</h3><div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"><pre class="aplayer-lrc-content">[ti:クムリウタ]
+[ar:大塚愛]
+[al:ballad collection]
+[ed:1]
+[00:26.115]立ち止まってすべてを無にした
+[00:32.730]目をそらして　逃げてたことを
+[00:39.157]恥じらって　向かい合うことができたら
+[00:47.001]奇跡を信じた
+[00:54.077]大塚愛 - クムリウタ
+[00:59.577]作詞／作曲：愛
+[01:05.245]蝉は鳴く 響くように
+[01:11.571]歌うように
+[01:14.670]死んでいくかな
+[01:18.267]私も明日消えるなら　もっと
+[01:25.932]ちゃんといれるのかな?
+[01:32.460]ここに立っていることさえ
+[01:41.457]時々意識を失いそうになる
+[01:48.634]曇り空、泣くな
+[01:54.508]まだここは通過点で
+[02:01.248]曇り空、泣くな
+[02:07.514]心は本当は強い
+[02:16.043]Music...
+[02:26.439]フワフワ流れるように
+[02:32.884]なんとなく
+[02:35.720]過ごせるけれど
+[02:39.470]本当は虚しいことには　ずっと
+[02:47.050]前から気付いてた
+[02:53.430]傷を持って
+[02:58.391]もう一度って
+[03:02.534]強く誓え
+[03:06.401]自分を見捨てるな
+[03:09.641]曇り空、泣くな
+[03:15.609]せめて心を信じて
+[03:22.341]曇り空、泣くな
+[03:28.680]待ってる人はいる
+[03:32.005]深海の中を　くるり　泳いで
+[03:38.875]聞こえる水の声 思い出す
+[03:45.430]あの雨の日も
+[03:48.686]こんな暗くて
+[03:51.881]二つある扉
+[03:55.170]曇り空、泣くな
+[04:01.154]まだここは通過点で
+[04:07.739]曇り空、泣くな
+[04:14.011]心は本当は強い
+[04:20.729]曇り空、泣くな
+[04:27.094]まだここは通過点で
+[04:33.656]曇り空、泣くな
+[04:39.904]心は本当は強い
+[04:48.988]立ち止まって
+[04:51.933]すべてを無にした
+[04:55.410]目をそらして
+[04:58.366]逃げてたことを
+[05:02.059]恥じらって
+[05:04.920]向かい合うことができたら…
+[05:09.721]奇跡を信じた
+[05:19.499]
+[05:22.700]
+[05:58.000]-- AutoLyric (http://www.autolyric.com) --
+</pre></div><script>var aplayer1 = new APlayer({element: document.getElementById("aplayer1"),narrow: false,autoplay: false,showlrc: 2,music : {title: "クムリウタ(Live)",author: "大塚愛",url: "http://music.163.com/song/media/outer/url?id=29497667.mp3",pic: ""}});aplayer1.init();</script>
+<hr>
+<h3 id="莫文蔚-爱情-Live"><a href="#莫文蔚-爱情-Live" class="headerlink" title="莫文蔚 - 爱情(Live)"></a>莫文蔚 - 爱情(Live)</h3><div id="aplayer2" class="aplayer" style="margin-bottom: 20px;"><pre class="aplayer-lrc-content">[00:23.699]要不是因为爱着你
+[00:29.399]怎么会夜深还没睡意
+[00:35.999]每个念头都关於你
+[00:41.560]我想你 想你 好想你
+[00:52.39]
+[00:54.140]要不是因为爱着你
+[00:59.930]怎会有不安的情绪
+[01:05.980]每个莫名的日子里
+[01:12.90]我想你 想你 好想你
+[01:20.600]
+[01:24.160]爱是折磨人的东西
+[01:29.800]却又舍不得这样放弃
+[01:35.800]不停揣测你的心理
+[01:41.500]可有 我姓名
+[01:46.500]
+[01:47.420]爱是我唯一的秘密
+[01:53.170]让人心碎却又着迷
+[01:58.850]无论是用什么言语
+[02:04.960]只会 只会 思念你
+[02:12.170]
+[02:16.239]要不是因为爱着你
+[02:22.649]怎会不经意就叹息
+[02:28.390]有种不完整的心情
+[02:34.440]爱你 爱着你
+</pre></div><script>var aplayer2 = new APlayer({element: document.getElementById("aplayer2"),narrow: false,autoplay: false,showlrc: 2,music : {title: "爱情(live)",author: "莫文蔚",url: "http://m2.music.126.net/PnrVZVM1VMZ61ZNV2YGw5g==/1122601371967144.mp3",pic: ""}});aplayer2.init();</script>
+<hr>
+<h3 id="田馥甄-小幸运"><a href="#田馥甄-小幸运" class="headerlink" title="田馥甄 - 小幸运"></a>田馥甄 - 小幸运</h3><div id="aplayer3" class="aplayer" style="margin-bottom: 20px;"><pre class="aplayer-lrc-content">[ti:小幸运]
+[ar:田馥甄]
+[al:小幸运 - Single]
+[00:03.400]小幸运
+[00:07.840]词:徐世珍/吴辉福   
+[00:10.979]曲:JerryC    
+[00:15.149]我听见雨滴落在青青草地
+[00:21.409]我听见远方下课钟声响起
+[00:27.659]可是我没有听见你的声音
+[00:32.687]认真 呼唤我姓名
+[00:39.700]爱上你的时候还不懂感情
+[00:45.720]离别了才觉得刻骨 铭心
+[00:51.868]为什么没有发现遇见了你
+[00:56.630]是生命最好的事情
+[01:02.328][02:51.520]也许当时忙着微笑和哭泣
+[01:08.220][02:57.400]忙着追逐天空中的流星
+[01:13.970][03:03.730]人理所当然的忘记
+[01:18.600][03:08.100]是谁风里雨里一直默默守护在原地
+[01:26.128][03:15.670]原来你是我最想留住的幸运
+[01:31.489][03:20.979]原来我们和爱情曾经靠得那么近
+[01:37.580][03:26.958]那为我对抗世界的决定
+[01:42.118][03:31.360]那陪我淋的雨
+[01:45.229][03:34.590]一幕幕都是你 一尘不染的真心
+[01:52.667][03:42.080]与你相遇 好幸运
+[01:55.700][03:45.159]可我已失去为你泪流满面的权利
+[02:01.779][03:51.187]但愿在我看不到的天际
+[02:06.289][03:55.909]你张开了双翼
+[02:09.510][03:59.080]遇见你的注定 (oh--) 
+[02:13.850][04:06.578]她会有多幸运
+[02:29.110]青春是段跌跌撞撞的旅行
+[02:35.240]拥有着后知后觉的美丽
+[02:41.319]来不及感谢是你给我勇气
+[02:46.020]让我能做回我自己  
+
+[4:20]-- AutoLyric (http://www.autolyric.com) --</pre></div><script>var aplayer3 = new APlayer({element: document.getElementById("aplayer3"),narrow: false,autoplay: false,showlrc: 2,music : {title: "小幸运",author: "田馥甄",url: "http://link.hhtjim.com/xiami/1774490672.mp3",pic: ""}});aplayer3.init();</script>
+<hr>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/music/" rel="tag"># music</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/11/demo-2048-c/" rel="next" title="demo-2048-c">
+                <i class="fa fa-chevron-left"></i> demo-2048-c
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/01/Socket编程/" rel="prev" title="Socket编程">
+                Socket编程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/07/15/share-music/" data-title="share-music" data-content data-url="http://gitforhzc.github.io/2016/07/15/share-music/">
+  <div class="ds-share-inline">
+    <ul class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="2016/07/15/share-music/" data-title="share-music" data-url="http://gitforhzc.github.io/2016/07/15/share-music/">
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="hzc">
+            
+              <p class="site-author-name" itemprop="name">hzc</p>
+              <p class="site-description motion-element" itemprop="description">c++ server</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐插件"><span class="nav-number">1.</span> <span class="nav-text">音乐插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-tag-aplayer"><span class="nav-number">1.1.</span> <span class="nav-text">hexo-tag-aplayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取mp3外链"><span class="nav-number">1.2.</span> <span class="nav-text">获取mp3外链</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网易云音乐"><span class="nav-number">1.2.1.</span> <span class="nav-text">网易云音乐</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#虾米音乐"><span class="nav-number">1.2.2.</span> <span class="nav-text">虾米音乐</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#QQ音乐"><span class="nav-number">1.2.3.</span> <span class="nav-text">QQ音乐</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取lrc歌词"><span class="nav-number">1.3.</span> <span class="nav-text">获取lrc歌词</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#autolrc"><span class="nav-number">1.3.1.</span> <span class="nav-text">autolrc</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#zonylrcdownload"><span class="nav-number">1.3.2.</span> <span class="nav-text">zonylrcdownload</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考致谢"><span class="nav-number">1.4.</span> <span class="nav-text">参考致谢</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分享音乐"><span class="nav-number">2.</span> <span class="nav-text">分享音乐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#It-Is-Well-Live"><span class="nav-number">2.1.</span> <span class="nav-text">It Is Well (Live)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大塚愛-クムリウタ-Live"><span class="nav-number">2.2.</span> <span class="nav-text">大塚愛 - クムリウタ(Live)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#莫文蔚-爱情-Live"><span class="nav-number">2.3.</span> <span class="nav-text">莫文蔚 - 爱情(Live)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#田馥甄-小幸运"><span class="nav-number">2.4.</span> <span class="nav-text">田馥甄 - 小幸运</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hzc</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"hzccomment"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
