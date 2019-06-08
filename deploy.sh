@@ -6,6 +6,6 @@ hexo generate --deploy
 
 git add --all .
 git commit -m "update: ${date}"
-git push origin hexo
+git push -u origin hexo
 
 
