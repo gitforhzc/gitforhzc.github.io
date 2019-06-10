@@ -2,20 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://gitforhzc.github.io/guestbook/index.html</loc>
-    
-    <lastmod>2019-06-08T11:05:57.613Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://gitforhzc.github.io/tags/index.html</loc>
-    
-    <lastmod>2019-06-08T11:05:57.613Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://gitforhzc.github.io/books/index.html</loc>
     
     <lastmod>2019-06-08T11:05:57.613Z</lastmod>
@@ -23,7 +9,21 @@
   </url>
   
   <url>
+    <loc>http://gitforhzc.github.io/guestbook/index.html</loc>
+    
+    <lastmod>2019-06-08T11:05:57.613Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://gitforhzc.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-06-08T11:05:57.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://gitforhzc.github.io/tags/index.html</loc>
     
     <lastmod>2019-06-08T11:05:57.613Z</lastmod>
     
@@ -65,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://gitforhzc.github.io/2016/07/11/demo-2048-c/</loc>
+    <loc>http://gitforhzc.github.io/2016/07/06/xx/</loc>
     
     <lastmod>2019-06-08T11:05:57.563Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://gitforhzc.github.io/2016/07/06/xx/</loc>
+    <loc>http://gitforhzc.github.io/2016/07/11/demo-2048-c/</loc>
     
     <lastmod>2019-06-08T11:05:57.563Z</lastmod>
     
