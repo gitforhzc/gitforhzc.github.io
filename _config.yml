@@ -70,7 +70,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:gitforhzc/gitforhzc.github.io.git
+  repo: https://github.com/gitforhzc/gitforhzc.github.io.git
   branch: master
 
 # RSS
